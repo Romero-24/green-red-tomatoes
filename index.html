@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Green &amp; Red Tomatoes — Home Food. Comida real para una vida real</title>
+  <meta name="description" content="Green & Red Tomatoes: comida real del campo a tu mesa en El Salvador. KIDS, De La Mesa y cafeterías para empresas e instituciones desde 2010.">
+  <meta name="theme-color" content="#1D3A27">
+  <meta property="og:title" content="Green & Red Tomatoes — Comida real para una vida real">
+  <meta property="og:description" content="Del campo a tu mesa. KIDS, De La Mesa y servicio de cafetería para empresas.">
+  <meta property="og:image" content="assets/img/foto-kids.webp">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231D3A27'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='24' fill='%23F7EFDF'%3EG%26amp;R%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&family=Oswald:wght@500;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<!-- ========== Íconos (sprite) ========== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/><path d="M5 19 13 11"/></symbol>
+    <symbol id="i-sprout" viewBox="0 0 24 24"><path d="M12 21v-9"/><path d="M12 12c0-4-3-6-7-6 0 4 3 6 7 6Z"/><path d="M12 14c0-4 3-7 7-7 0 4-3 7-7 7Z"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6l-7-3Z"/></symbol>
+    <symbol id="i-wheat" viewBox="0 0 24 24"><path d="M12 21V8"/><path d="M12 8c-2-1-3-3-3-5 2 1 3 3 3 5Zm0 0c2-1 3-3 3-5-2 1-3 3-3 5Z"/><path d="M12 13c-2-1-3.5-2.5-3.5-4.5 2 .5 3.5 2.5 3.5 4.5Zm0 0c2-1 3.5-2.5 3.5-4.5-2 .5-3.5 2.5-3.5 4.5Z"/><path d="M12 18c-2-1-3.5-2.5-3.5-4.5 2 .5 3.5 2.5 3.5 4.5Zm0 0c2-1 3.5-2.5 3.5-4.5-2 .5-3.5 2.5-3.5 4.5Z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 3 6 13h5l-1 8 7-10h-5l1-8Z"/></symbol>
+    <symbol id="i-face" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M9 14.5c1.6 1.4 4.4 1.4 6 0"/><path d="M9 10h.01M15 10h.01"/><path d="M7 7.5c2-2.5 8-2.5 10 0"/></symbol>
+    <symbol id="i-family" viewBox="0 0 24 24"><circle cx="8" cy="7" r="2.5"/><circle cx="16" cy="7" r="2.5"/><circle cx="12" cy="13.5" r="2"/><path d="M3.5 19v-3a4.5 4.5 0 0 1 6-4.2M20.5 19v-3a4.5 4.5 0 0 0-6-4.2M8.5 21v-1.5a3.5 3.5 0 0 1 7 0V21"/></symbol>
+    <symbol id="i-house" viewBox="0 0 24 24"><path d="M4 11 12 4l8 7v9H4v-9Z"/><path d="M12 17s-3-1.8-3-3.6a1.6 1.6 0 0 1 3-.8 1.6 1.6 0 0 1 3 .8c0 1.8-3 3.6-3 3.6Z"/></symbol>
+    <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 4v16M8 20h8M5 7h14"/><path d="m5 7-3 6a3 3 0 0 0 6 0L5 7Zm14 0-3 6a3 3 0 0 0 6 0l-3-6Z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.8-4.4 4.3 1 6.1L12 17l-5.4 2.8 1-6.1-4.4-4.3 6.1-.8L12 3Z"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><rect x="3" y="9" width="18" height="10" rx="2"/><path d="M5 9V7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v2M3 13h18"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2 6h11v10H2zM13 9h4l3 3v4h-7"/><circle cx="6" cy="17.5" r="1.8"/><circle cx="16.5" cy="17.5" r="1.8"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/><path d="M9 12.5v5M8 12.5v2a1 1 0 0 0 2 0v-2M14 12.5c1.2.6 1.2 2.4 0 3v2"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M9 11h6a3 3 0 0 0-6 0ZM8.5 11h7"/><circle cx="12" cy="16" r="1.6"/><path d="m11.3 16 .5.5 1-1"/></symbol>
+    <symbol id="i-stand" viewBox="0 0 24 24"><path d="M3 9h18l-1.5-4h-15L3 9Z"/><path d="M3 9c0 1.2 1 2 2.2 2s2.2-.8 2.2-2c0 1.2 1 2 2.2 2S12 10.2 12 9c0 1.2 1 2 2.2 2s2.2-.8 2.2-2c0 1.2 1 2 2.2 2S21 10.2 21 9"/><path d="M5 11v9h14v-9M4 20h16"/><circle cx="12" cy="16" r="2"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M5 3h10l3 3v6"/><path d="M5 3v18h7"/><path d="M8 13h5M8 16h3"/><path d="M10 9.5c0-2 1.5-3.2 3.5-3.4 0 2-1.4 3.4-3.5 3.4Z"/><path d="M14 17h7a3.5 3.5 0 0 1-7 0Z"/><path d="M16 14.5c0-.8.6-.8.6-1.6M18.5 14.5c0-.8.6-.8.6-1.6"/></symbol>
+    <symbol id="i-dumbbell" viewBox="0 0 24 24"><path d="M6.5 7v10M17.5 7v10M3.5 9.5v5M20.5 9.5v5M6.5 12h11"/></symbol>
+    <symbol id="i-network" viewBox="0 0 24 24"><circle cx="12" cy="6" r="2.5"/><circle cx="6" cy="17" r="2.5"/><circle cx="18" cy="17" r="2.5"/><path d="M10.8 8.2 7.2 14.8M13.2 8.2l3.6 6.6M8.5 17h7"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+    <symbol id="i-tel" viewBox="0 0 24 24"><path d="M5 4h3.5l1.5 4-2 1.5a10 10 0 0 0 6.5 6.5L16 14l4 1.5V19a1.8 1.8 0 0 1-2 1.8A15.5 15.5 0 0 1 3.2 6 1.8 1.8 0 0 1 5 4Z"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91A9.86 9.86 0 0 0 12.04 2Zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.24 8.24 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24a8.24 8.24 0 0 1 8.24 8.25c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <!-- dibujos -->
+    <symbol id="d-sun" viewBox="0 0 100 100"><circle cx="50" cy="50" r="17"/><path d="M50 14v12M50 74v12M14 50h12M74 50h12M24.5 24.5l8.5 8.5M67 67l8.5 8.5M24.5 75.5l8.5-8.5M67 33l8.5-8.5"/></symbol>
+    <symbol id="d-cloud" viewBox="0 0 120 50"><path d="M8 44h104c3-10-4-18-14-16 0-12-14-19-24-12-4-12-24-14-30-1-10-5-22 3-20 14-9 0-17 7-16 15Z"/></symbol>
+  </defs>
+</svg>
+
+<!-- ========== Header ========== -->
+<header class="site-header" id="top">
+  <nav class="wrap nav" aria-label="Principal">
+    <a href="#inicio" class="brand" aria-label="Green & Red Tomatoes, inicio">
+      <img class="brand-logo" src="assets/img/logo/logo-verde.png" alt="Green &amp; Red Tomatoes" width="991" height="238">
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
+      <svg class="ico"><use href="#i-menu"/></svg>
+    </button>
+    <div class="nav-links" id="nav-links">
+      <a href="#nosotros">Nosotros</a>
+      <a href="#kids">Kids</a>
+      <a href="#de-la-mesa">De La Mesa</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#empresas">Empresas</a>
+      <a href="#clientes">Clientes</a>
+      <a href="https://wa.me/50376825733" target="_blank" rel="noopener" class="btn btn-wa"><svg><use href="#i-wa"/></svg>Pedir</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<!-- ========== Hero ========== -->
+<section class="hero" id="inicio">
+  <svg class="doodle sun ico" aria-hidden="true"><use href="#d-sun"/></svg>
+  <svg class="doodle cloud1 ico" aria-hidden="true" viewBox="0 0 120 50"><use href="#d-cloud"/></svg>
+  <svg class="doodle cloud2 ico" aria-hidden="true" viewBox="0 0 120 50"><use href="#d-cloud"/></svg>
+  <svg class="doodle cloud3 ico" aria-hidden="true" viewBox="0 0 120 50"><use href="#d-cloud"/></svg>
+
+  <div class="wrap hero-inner">
+    <p class="eyebrow ruled">Comida real para una vida real</p>
+    <h1 class="hero-logo"><img src="assets/img/logo/logo-verde.png" alt="Green &amp; Red Tomatoes" width="991" height="238"></h1>
+    <p class="hero-tag">Del campo a tu mesa</p>
+
+    <div class="subbrands">
+      <a href="#kids" class="sb sb-kids" aria-label="KIDS from Green & Red Tomatoes">
+        <span class="logo-kids"><span class="k">K</span><span class="i">I</span><span class="d">D</span><span class="s">S</span></span>
+        <span class="logo-from">from</span>
+        <span class="mini-gr">GREEN &amp; RED</span>
+        <span class="logo-sub">Tomatoes</span>
+      </a>
+      <span class="sep" aria-hidden="true"></span>
+      <a href="#de-la-mesa" class="sb sb-mesa" aria-label="De La Mesa">
+        <span class="logo-mesa">De La<br>Mesa</span>
+        <small>— Nuestras cocinas —<br>a sus casas</small>
+      </a>
+    </div>
+
+    <div class="badges">
+      <div class="badge"><span class="ring"><svg class="ico"><use href="#i-sprout"/></svg></span>Ingredientes<br>naturales</div>
+      <div class="badge"><span class="ring"><svg class="ico"><use href="#i-heart"/></svg></span>Sin<br>conservadores</div>
+      <div class="badge"><span class="ring"><svg class="ico"><use href="#i-wheat"/></svg></span>Balanceado<br>y nutritivo</div>
+    </div>
+
+    <div class="hero-cta">
+      <a href="#de-la-mesa" class="btn btn-solid">Ver nuestro menú</a>
+      <a href="https://wa.me/50376825733" target="_blank" rel="noopener" class="btn btn-ghost"><svg><use href="#i-wa"/></svg>Pedir por WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="hero-scene" aria-hidden="true">
+    <img class="ill left" src="assets/img/ill-campo-izq.webp" alt="">
+    <img class="ill right" src="assets/img/ill-campo-der.webp" alt="">
+  </div>
+</section>
+
+<!-- ========== Cifras ========== -->
+<section class="stats" aria-label="Green & Red en cifras">
+  <div class="wrap">
+    <div class="stat"><b>2010</b><span>Desde · El Salvador</span></div>
+    <div class="stat"><b>15+</b><span>Años de experiencia</span></div>
+    <div class="stat"><b>2,500</b><span>Personas atendidas</span></div>
+    <div class="stat"><b>8+</b><span>Empresas activas</span></div>
+  </div>
+</section>
+
+<!-- ========== Home Food ========== -->
+<section class="section homefood" id="home-food">
+  <div class="wrap homefood-grid">
+    <div class="homefood-photo reveal">
+      <img src="assets/img/stock/hero-bowl.webp" alt="Bowl de proteína con huevos, edamame, maíz, tomate, repollo morado y pepino" loading="lazy">
+      <span class="homefood-seal">Fundada en 2010<br>· El Salvador ·</span>
+    </div>
+    <div class="homefood-copy reveal">
+      <p class="eyebrow">Home Food</p>
+      <h2 class="title-cond">Hecho<br><em>como</em><br>casa.</h2>
+      <p class="lead">Alimentación que nutre. Servicio que fideliza.</p>
+      <p>Cocinamos todos los días como se cocina en casa: con ingredientes frescos, recetas balanceadas y el cuidado de quien sirve a su propia familia.</p>
+      <a href="#nosotros" class="btn btn-solid">Conoce nuestra historia →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Marcas ========== -->
+<section class="section" id="marcas">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Nuestra familia de marcas</p>
+      <h2 class="title">Una cocina, muchas mesas</h2>
+      <hr class="accent-bar">
+      <p class="lead">Desde la lonchera de los más pequeños hasta el almuerzo de tu equipo: la misma cocina, los mismos ingredientes reales.</p>
+    </div>
+    <div class="brands-grid">
+      <a href="#kids" class="brand-card kids reveal">
+        <div class="media">
+          <img class="scene" src="assets/img/ill-kids-der.webp" alt="">
+          <span class="kids-lockup">
+            <span class="logo-kids"><span class="k">K</span><span class="i">I</span><span class="d">D</span><span class="s">S</span></span>
+            <span class="logo-from">from</span>
+            <span class="mini-gr">GREEN &amp; RED</span>
+          </span>
+        </div>
+        <div class="body">
+          <span class="tagline">Comida real para pequeños exploradores</span>
+          <h3>KIDS from Green &amp; Red</h3>
+          <p>Menú saludable para pequeños grandes días: porciones balanceadas, sabores familiares y presentación que los niños disfrutan.</p>
+          <span class="more">Conocer KIDS →</span>
+        </div>
+      </a>
+      <a href="#de-la-mesa" class="brand-card mesa reveal">
+        <div class="media">
+          <img class="scene" src="assets/img/ill-mesa-der.webp" alt="">
+          <span class="logo-mesa">De La<br>Mesa</span>
+        </div>
+        <div class="body">
+          <span class="tagline">Comida real para la vida de hoy</span>
+          <h3>De La Mesa</h3>
+          <p>Platos preparados, ensaladas del día y nutrición completa en una botella. Hecho fresco, listo para ti.</p>
+          <span class="more">Ver el menú →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Nosotros ========== -->
+<section class="section section-soft" id="nosotros">
+  <div class="wrap">
+    <div class="about">
+      <div class="about-art reveal" aria-hidden="true">
+        <img class="ill fade-bottom" src="assets/img/ill-hombre.webp" alt="">
+        <img class="ill fade-bottom" src="assets/img/ill-mujer.webp" alt="">
+        <div class="stamp">DE NUESTRAS<br>COCINAS<br>A SUS CASAS</div>
+      </div>
+      <div class="about-copy reveal">
+        <p class="eyebrow">Nuestra filosofía</p>
+        <h2 class="title">Comfort food. Real.</h2>
+        <p>En Green &amp; Red Tomatoes creemos que comer bien no es un lujo. Desde 2010 hemos cambiado el estándar de las cafeterías en El Salvador, poniendo la nutrición en el centro de cada plato. Nos alejamos de la comida “a la vista” para ofrecer algo mejor: satisfacción real, ingredientes honestos y presentación que enamora.</p>
+        <ol class="principles">
+          <li><b>01</b>Basarnos en los 5 grupos de la pirámide alimenticia en cada combo.</li>
+          <li><b>02</b>Promover el consumo de frutas y verduras desde la cocina escolar y corporativa.</li>
+          <li><b>03</b>Reducir grasas y azúcares sin sacrificar sabor ni presentación.</li>
+          <li><b>04</b>Tratar a cada cliente como individuo, no como simple consumidor.</li>
+        </ol>
+        <div class="trio"><span>Ingredientes reales</span><span>Personas reales</span><span>Un futuro más saludable</span></div>
+      </div>
+    </div>
+
+    <div class="pillars reveal">
+      <div class="pillar">
+        <img class="pillar-photo" src="assets/img/stock/equilibrado.webp" alt="Plato equilibrado con vegetales y proteína" loading="lazy">
+        <span class="ring"><svg class="ico"><use href="#i-scale"/></svg></span>
+        <h3>Equilibrados</h3>
+        <p>Cada plato ofrece el equilibrio alimenticio en la proporción correcta de carbos, proteínas, vitaminas y minerales. La nutrición no negocia.</p>
+      </div>
+      <div class="pillar">
+        <img class="pillar-photo" src="assets/img/stock/saludable.webp" alt="Ingredientes frescos y naturales" loading="lazy">
+        <span class="ring"><svg class="ico"><use href="#i-leaf"/></svg></span>
+        <h3>Saludables</h3>
+        <p>Reducimos grasas, azúcares, harinas y condimentos que no son necesarios para tu bienestar diario.</p>
+      </div>
+      <div class="pillar">
+        <img class="pillar-photo" src="assets/img/stock/buengusto.webp" alt="Presentación de comida de buen gusto" loading="lazy">
+        <span class="ring"><svg class="ico"><use href="#i-heart"/></svg></span>
+        <h3>De buen gusto</h3>
+        <p>En la presentación y en el sabor. Compensamos la reducción de grasas con recursos culinarios para que cada bocado sea una experiencia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== KIDS ========== -->
+<section class="section" id="kids">
+  <div class="wrap">
+    <div class="kids-head reveal">
+      <p class="eyebrow">KIDS from Green &amp; Red Tomatoes</p>
+      <h2 class="title">Menú saludable</h2>
+      <p class="menu-sub">Para pequeños grandes días</p>
+    </div>
+
+    <div class="kids-hero reveal">
+      <img src="assets/img/foto-kids.webp" alt="Niño alcanzando un durazno sobre un mueble de madera, con dibujos de niños a línea" loading="lazy">
+      <div class="cap">
+        <p>Comida real para pequeños exploradores.</p>
+        <span class="hand">Hecho con amor ♥</span>
+      </div>
+    </div>
+
+    <div class="solution">
+      <div class="reveal">
+        <h3 class="title">Una opción saludable para niños</h3>
+        <p class="lead">Nutrición real para grandes aventuras</p>
+        <div class="benefits">
+          <div class="benefit"><span class="ring"><svg class="ico"><use href="#i-house"/></svg></span><h4>Sabores familiares</h4><p>Comidas que los niños reconocen y disfrutan.</p></div>
+          <div class="benefit"><span class="ring"><svg class="ico"><use href="#i-scale"/></svg></span><h4>Porciones balanceadas</h4><p>Pensadas para sus necesidades y apetito.</p></div>
+          <div class="benefit"><span class="ring"><svg class="ico"><use href="#i-leaf"/></svg></span><h4>Ingredientes frescos</h4><p>Comida real preparada con ingredientes frescos.</p></div>
+          <div class="benefit"><span class="ring"><svg class="ico"><use href="#i-star"/></svg></span><h4>Presentación atractiva</h4><p>Platos coloridos que hacen la comida más divertida.</p></div>
+          <div class="benefit"><span class="ring"><svg class="ico"><use href="#i-box"/></svg></span><h4>Empaque práctico</h4><p>Porciones organizadas, fáciles de servir y llevar.</p></div>
+          <div class="benefit"><span class="ring"><svg class="ico"><use href="#i-truck"/></svg></span><h4>Pedidos sencillos</h4><p>Una solución práctica para las familias.</p></div>
+        </div>
+        <p class="note"><svg class="ico"><use href="#i-heart"/></svg>Diseñado para niños. Hecho fácil para las familias.</p>
+      </div>
+      <img class="tray reveal" src="assets/img/kids-bandeja.webp" alt="Bandeja KIDS de pollo teriyaki con arroz, vegetales, garbanzos, brócoli y piña" loading="lazy">
+    </div>
+
+    <div class="section-head reveal" style="margin-top:clamp(64px,8vw,110px)">
+      <h3 class="title">Nuestro menú</h3>
+      <p class="eyebrow">Comida real para grandes aventuras</p>
+    </div>
+    <div class="menu-grid">
+      <article class="dish reveal"><div class="shot"><img src="assets/img/kids-1.webp" alt="Bandeja Mac Monster y pollo" loading="lazy"></div><div class="row"><span class="num">1</span><div><h4>Mac Monster y pollo</h4><p>Mac &amp; cheese cremoso con pollo grillado y barra de granola.</p></div></div></article>
+      <article class="dish reveal"><div class="shot"><img src="assets/img/kids-2.webp" alt="Bandeja wrap de pavo y queso" loading="lazy"></div><div class="row"><span class="num">2</span><div><h4>Wrap de pavo y queso</h4><p>Wrap de pavo y queso, vegetales frescos y uvas.</p></div></div></article>
+      <article class="dish reveal"><div class="shot"><img src="assets/img/kids-3.webp" alt="Bandeja pasta con pollo y vegetales" loading="lazy"></div><div class="row"><span class="num">3</span><div><h4>Pasta con pollo y vegetales</h4><p>Pasta integral con pollo, vegetales y brócoli.</p></div></div></article>
+      <article class="dish reveal"><div class="shot"><img src="assets/img/kids-4.webp" alt="Bandeja pesto pasta con pollo" loading="lazy"></div><div class="row"><span class="num">4</span><div><h4>Pesto pasta</h4><p>Pasta al pesto con pollo, vegetales frescos y barra de granola.</p></div></div></article>
+      <article class="dish reveal"><div class="shot"><img src="assets/img/kids-5.webp" alt="Bandeja pollo teriyaki con arroz" loading="lazy"></div><div class="row"><span class="num">5</span><div><h4>Pollo teriyaki con arroz</h4><p>Pollo en salsa teriyaki con arroz, vegetales y piña.</p></div></div></article>
+      <article class="dish reveal"><div class="shot"><img src="assets/img/kids-6.webp" alt="Bandeja avena nocturna con frutas" loading="lazy"></div><div class="row"><span class="num">6</span><div><h4>Avena nocturna</h4><p>Avena con mantequilla de maní, banano, fresas, arándanos y granola.</p></div></div></article>
+    </div>
+  </div>
+  <div class="kids-scene">
+    <img class="ill left" src="assets/img/ill-kids-izq.webp" alt="">
+    <div class="kids-cta reveal">
+      <p class="hand">Pequeños momentos, grandes aventuras ♥</p>
+      <h3 class="title">¿Listo para su lonchera?</h3>
+      <p>Pide el menú semanal KIDS por WhatsApp o en cualquiera de nuestros kioscos.</p>
+      <a href="https://wa.me/50376825733" target="_blank" rel="noopener" class="btn btn-solid"><svg><use href="#i-wa"/></svg>Pedir menú KIDS</a>
+    </div>
+    <img class="ill right" src="assets/img/ill-kids-der.webp" alt="">
+  </div>
+</section>
+
+<!-- ========== DE LA MESA ========== -->
+<section class="section section-soft" id="de-la-mesa" style="padding-top:0">
+  <div class="wrap">
+    <div class="mesa-intro">
+      <div class="side"><img class="ill fade-side" src="assets/img/ill-mesa-izq.webp" alt=""></div>
+      <div class="center-col reveal">
+        <div class="mini-brand">
+          <span class="logo-gr">G<span class="amp">&amp;</span>R</span>
+          <b>GREEN &amp; RED TOMATOES</b>
+          <span class="logo-sub">Fresh kitchen</span>
+        </div>
+        <h2 class="logo-mesa">De La<br>Mesa</h2>
+        <p class="menu-line">Nuestro menú</p>
+        <hr class="accent-bar">
+        <p class="eyebrow">Del campo a tu mesa</p>
+        <div class="badges" style="margin-top:12px">
+          <div class="badge"><span class="ring"><svg class="ico"><use href="#i-sprout"/></svg></span>Ingredientes<br>naturales</div>
+          <div class="badge"><span class="ring"><svg class="ico"><use href="#i-heart"/></svg></span>Sin<br>conservadores</div>
+          <div class="badge"><span class="ring"><svg class="ico"><use href="#i-wheat"/></svg></span>Balanceado<br>y nutritivo</div>
+        </div>
+      </div>
+      <div class="side"><img class="ill fade-side" src="assets/img/ill-mesa-der.webp" alt=""></div>
+    </div>
+
+    <!-- Platos -->
+    <div class="section-head reveal" style="margin-top:40px;margin-bottom:10px">
+      <p class="eyebrow ruled">Nuestros platos</p>
+      <p class="lead">Nuestras recetas, tu día más fácil. Hecho fresco, listo para ti: calienta y disfruta.</p>
+    </div>
+    <div class="platos reveal">
+      <div class="plato"><h4>Pollo<br>a la naranja</h4><img class="ill" src="assets/img/animal-pollo.webp" alt="Ilustración de pollo"><span class="dp">Double protein</span></div>
+      <div class="plato"><h4>Penne<br>diábola</h4><img class="ill" src="assets/img/animal-pollo.webp" alt="Ilustración de pollo"><span class="dp">Double protein</span></div>
+      <div class="plato"><h4>Lasagna<br>boloñesa</h4><img class="ill" src="assets/img/animal-res.webp" alt="Ilustración de res"><span class="dp">Double protein</span></div>
+      <div class="plato"><h4>Pechuga<br>parmesano</h4><img class="ill" src="assets/img/animal-pollo.webp" alt="Ilustración de pollo"></div>
+      <div class="plato"><h4>Lomo de cerdo<br>relleno</h4><img class="ill" src="assets/img/animal-cerdo.webp" alt="Ilustración de cerdo"></div>
+      <div class="plato"><h4>Bisteck<br>oriental</h4><img class="ill" src="assets/img/animal-res.webp" alt="Ilustración de res"></div>
+      <div class="plato"><h4>Pollo<br>teriyaki</h4><img class="ill" src="assets/img/animal-pollo.webp" alt="Ilustración de pollo"></div>
+      <div class="plato"><h4>Cordon<br>blue</h4><img class="ill" src="assets/img/animal-pollo.webp" alt="Ilustración de pollo"></div>
+      <div class="plato"><h4>Meatloaf<br>salsa hongos</h4><img class="ill" src="assets/img/animal-res.webp" alt="Ilustración de res"></div>
+    </div>
+
+    <!-- Double protein -->
+    <div class="double">
+      <div class="reveal">
+        <h3 class="title-cond">Platos Double Protein</h3>
+        <p class="lead">Más proteína. Más energía.</p>
+        <p class="muted">Disponible en tus favoritos.</p>
+        <img class="packs" src="assets/img/mesa-double.webp" alt="Empaques De La Mesa de Penne Diábola y Pasta Alfredo con pollo, Double Protein" loading="lazy">
+      </div>
+      <div class="options reveal">
+        <h4>— 6 opciones —</h4>
+        <ul>
+          <li>Penne diábola</li>
+          <li>Lasaña boloñesa</li>
+          <li>Pasta alfredo con pollo</li>
+          <li>Pasta parmesana de pollo</li>
+          <li>Fusilli al pesto con pollo</li>
+          <li>Pollo a la naranja</li>
+        </ul>
+        <p class="hand">Más proteína, mismo sabor.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Ensaladas -->
+<section class="section" id="ensaladas">
+  <div class="wrap">
+    <div class="ensaladas">
+      <img class="cup reveal" src="assets/img/mesa-bucca.webp" alt="Vaso de ensalada La Bucca de De La Mesa" loading="lazy">
+      <div class="reveal">
+        <div class="head">
+          <p class="eyebrow">Nuestras</p>
+          <h2 class="title-cond">Ensaladas</h2>
+          <span class="tagline">Frescas, reales, del día</span>
+        </div>
+        <ul class="salad-list">
+          <li>Griega</li><li>La Bucca</li>
+          <li>Asiática</li><li>Buffalo</li>
+          <li>César</li><li>Balsámica</li>
+          <li>Baja</li><li>Cobb</li>
+        </ul>
+        <div class="perks">
+          <span><span class="ring"><svg class="ico"><use href="#i-sprout"/></svg></span>Ingredientes frescos</span>
+          <span><span class="ring"><svg class="ico"><use href="#i-heart"/></svg></span>Sin conservadores</span>
+          <span><span class="ring"><svg class="ico"><use href="#i-wheat"/></svg></span>Buena fuente de proteína</span>
+        </div>
+        <p class="divider-hand hand" style="margin-top:34px">Comida real para la vida de hoy</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bebida -->
+<section class="section section-soft" id="botella">
+  <div class="wrap">
+    <div class="bottle">
+      <div class="copy reveal">
+        <div class="presenta">
+          <span class="logo-gr">GREEN <span class="amp">&amp;</span>RED</span>
+          <span class="logo-sub">Tomatoes</span>
+          <small>PRESENTA</small>
+        </div>
+        <h2 class="logo-mesa">De La<br>Mesa</h2>
+        <h3>Nutrición real<br>en una botella</h3>
+        <p>Una comida deliciosa y equilibrada, elaborada con ingredientes reales para acompañarte en tu día a día. Todo lo que necesitas para seguir tu día.</p>
+        <div class="flavors"><span class="v">Vainilla</span><span class="c">Chocolate</span><span class="f">Fresa</span></div>
+        <p style="font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);font-weight:600">500 ml · Sin azúcares añadidos · Sin lactosa · Sin gluten</p>
+      </div>
+      <div class="shot reveal"><img src="assets/img/mesa-botellas.webp" alt="Botellas De La Mesa Comida Completa en sabores vainilla, chocolate y fresa" loading="lazy"></div>
+    </div>
+
+    <div class="nutri reveal">
+      <div><span class="ring"><svg class="ico"><use href="#i-dumbbell"/></svg></span><h4>Proteínas</h4><p>Ayudan a construir y mantener músculo.</p></div>
+      <div><span class="ring"><svg class="ico"><use href="#i-wheat"/></svg></span><h4>Carbohidratos complejos</h4><p>Energía sostenida durante el día.</p></div>
+      <div><span class="ring"><svg class="ico"><use href="#i-heart"/></svg></span><h4>Grasas saludables</h4><p>Para el corazón y la función cerebral.</p></div>
+      <div><span class="ring"><svg class="ico"><use href="#i-network"/></svg></span><h4>26 vitaminas y minerales</h4><p>Apoyan tu sistema inmunológico y bienestar.</p></div>
+      <div><span class="ring"><svg class="ico"><use href="#i-leaf"/></svg></span><h4>Fibra natural</h4><p>Favorece la digestión y te mantiene satisfecho.</p></div>
+    </div>
+
+    <div class="city">
+      <div class="reveal">
+        <h3>Tu comida completa,</h3>
+        <p class="hand">donde y cuando quieras.</p>
+        <p class="notes">Comida real. Donde quieras. Una vida real.</p>
+      </div>
+      <div class="ill-wrap reveal"><img class="ill fade-edges" src="assets/img/ill-ciudad.webp" alt="Ilustración de un joven tomando la bebida De La Mesa frente al monumento El Salvador del Mundo" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Cómo funciona ========== -->
+<section class="section" id="como-funciona">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2 class="title">¿Cómo funciona?</h2>
+      <hr class="accent-bar">
+      <p class="lead">Un proceso simple, práctico y confiable.</p>
+    </div>
+    <ol class="steps reveal">
+      <li class="step"><span class="n">1</span><span class="disc"><svg class="ico"><use href="#i-calendar"/></svg></span><p>Recibe el menú semanal</p></li>
+      <li class="step"><span class="n">2</span><span class="disc"><svg class="ico"><use href="#i-phone"/></svg></span><p>Elige y pide por WhatsApp o directamente en uno de nuestros kioscos</p></li>
+      <li class="step"><span class="n">3</span><span class="disc"><svg class="ico"><use href="#i-box"/></svg></span><p>Preparamos y etiquetamos tu pedido</p></li>
+      <li class="step"><span class="n">4</span><span class="disc"><svg class="ico"><use href="#i-stand"/></svg></span><p>Recógelo en nuestros stands o escríbenos para entregas especiales</p></li>
+      <li class="step"><span class="n">5</span><span class="disc"><svg class="ico"><use href="#i-doc"/></svg></span><p>Incluimos instrucciones de conservación y calentado</p></li>
+    </ol>
+    <a class="wa-bar reveal" href="https://wa.me/50376825733" target="_blank" rel="noopener">
+      <svg><use href="#i-wa"/></svg>
+      <span class="sep" aria-hidden="true"></span>
+      <span>Contáctanos directamente por WhatsApp<small>7682-5733 · Respondemos en horario de servicio</small></span>
+    </a>
+  </div>
+</section>
+
+<!-- ========== Empresas ========== -->
+<section class="section section-soft" id="empresas">
+  <div class="wrap">
+    <div class="biz-intro reveal">
+      <div>
+        <p class="eyebrow">Para empresas e instituciones</p>
+        <h2 class="title" style="margin-top:12px">Cafeterías que nutren. Servicio que fideliza.</h2>
+      </div>
+      <p>Somos especialistas en administración y operación de cafeterías para empresas, escuelas y grupos cautivos. Desayuno, almuerzo, take out y jugos naturales, con la misma cocina de siempre.</p>
+    </div>
+
+    <div class="tabs reveal" role="tablist" aria-label="Menú de cafetería">
+      <button class="tab" role="tab" aria-selected="true" aria-controls="p-desayuno" id="t-desayuno">Desayuno</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p-almuerzo" id="t-almuerzo" tabindex="-1">Almuerzo</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p-takeout" id="t-takeout" tabindex="-1">Take out</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p-bebidas" id="t-bebidas" tabindex="-1">Ambrosía Juicing</button>
+    </div>
+
+    <div class="panel cards" role="tabpanel" id="p-desayuno" aria-labelledby="t-desayuno">
+      <div class="card has-photo"><img src="assets/img/stock/parfait.webp" alt="Parfait" loading="lazy"><div class="card-body"><span class="tag">Opción escolar</span><h4>Parfait</h4><p>Yogurt con fruta de estación, mermelada natural y granola.</p></div></div>
+      <div class="card has-photo"><img src="assets/img/stock/burrito.webp" alt="Breakfast burrito" loading="lazy"><div class="card-body"><span class="tag">Favorito</span><h4>Breakfast burrito</h4><p>Huevos revueltos, queso mozzarella, salsa ranchera natural, jamón de pavo, tomate y espinaca.</p></div></div>
+      <div class="card has-photo"><img src="assets/img/stock/tostadas.webp" alt="Tostadas capresse" loading="lazy"><div class="card-body"><span class="tag">Clásico</span><h4>Tostadas capresse</h4><p>Dos rodajas de pan de papa con rebanadas de tomate, queso mozzarella y pesto.</p></div></div>
+      <div class="card has-photo"><img src="assets/img/stock/huevos.webp" alt="Huevos revueltos" loading="lazy"><div class="card-body"><span class="tag">Proteína</span><h4>Huevos revueltos</h4><p>Con vegetales, en salsa ranchera o fritos. Con pan francés o pan dulce de temporada.</p></div></div>
+      <div class="card has-photo"><img src="assets/img/stock/avena.webp" alt="Avena" loading="lazy"><div class="card-body"><span class="tag">Natural</span><h4>Avena</h4><p>Avena caliente, acompañada con pasas, azúcar morena y banano.</p></div></div>
+      <div class="card has-photo"><img src="assets/img/stock/frutas.webp" alt="Coctel de frutas" loading="lazy"><div class="card-body"><span class="tag">Fresco</span><h4>Coctel de frutas</h4><p>4 frutas de temporada, miel pura y granola. Energía natural para tu mañana.</p></div></div>
+    </div>
+    <div class="panel cards" role="tabpanel" id="p-almuerzo" aria-labelledby="t-almuerzo" hidden>
+      <div class="card has-photo"><img src="assets/img/stock/pollo.webp" alt="Pollo rostizado" loading="lazy"><div class="card-body"><span class="tag">Combo económico</span><h4>Pollo rostizado</h4><p>Plato base + carbos + ensalada + refresco natural. Nutrición completa en un solo plato.</p></div></div>
+      <div class="card has-photo"><img src="assets/img/stock/lomo.webp" alt="Lomo relleno" loading="lazy"><div class="card-body"><span class="tag">Ejecutivo</span><h4>Lomo relleno</h4><p>Proteína + carbo + sopa pequeña + ensalada + refresco natural.</p></div></div>
+      <div class="card has-photo"><img src="assets/img/stock/carne.webp" alt="Carne asada" loading="lazy"><div class="card-body"><span class="tag">Clásico</span><h4>Carne asada</h4><p>Bistec encebollado o carne deshilada con ensalada fresca y carbo del día.</p></div></div>
+      <div class="card has-photo"><img src="assets/img/stock/caldo.webp" alt="Caldo de res" loading="lazy"><div class="card-body"><span class="tag">Sopa</span><h4>Caldo de res</h4><p>Sopa de pollo con vegetales, frijoles con carne o caldo azteca. Reconfortante y nutritivo.</p></div></div>
+      <div class="card has-photo"><img src="assets/img/stock/lasana.webp" alt="Lasaña" loading="lazy"><div class="card-body"><span class="tag">Pasta</span><h4>Lasaña</h4><p>Res, pollo, vegetales, espinaca o mixta. Con salsa italiana, al pesto o primavera.</p></div></div>
+      <div class="card has-photo"><img src="assets/img/stock/ensalada.webp" alt="Ensalada fresca" loading="lazy"><div class="card-body"><span class="tag">Ensalada</span><h4>Ensalada fresca</h4><p>Rusa, de papa tradicional, de coditos, chimol o de ejotes con remolacha.</p></div></div>
+    </div>
+    <div class="panel cards" role="tabpanel" id="p-takeout" aria-labelledby="t-takeout" hidden>
+      <div class="panel-banner"><img src="assets/img/stock/bowl-oscuro.webp" alt="Bowl para llevar con cerdo, aguacate, queso fresco, arroz y vegetales" loading="lazy"><span>Take out · listo para llevar</span></div>
+      <div class="card"><span class="tag">Take out</span><h4>Wraps</h4><p>Reducción de grasas, ingredientes de calidad. Opciones de pollo, res o vegetariano.</p></div>
+      <div class="card"><span class="tag">Take out</span><h4>Paninis</h4><p>Preparados con la menor cantidad de grasa y el mejor sabor. Rápido, rico y nutritivo.</p></div>
+      <div class="card"><span class="tag">Take out</span><h4>Ensaladas parfait</h4><p>Cereales, granos y fruta fresca. Una opción liviana para tu mejor rendimiento.</p></div>
+    </div>
+    <div class="panel cards" role="tabpanel" id="p-bebidas" aria-labelledby="t-bebidas" hidden>
+      <div class="panel-banner"><img src="assets/img/stock/jugos.webp" alt="Botellas de jugos naturales de frutas y vegetales" loading="lazy"><span>Ambrosía Juicing · 100% natural</span></div>
+      <div class="card"><span class="tag">Juicing</span><h4>Refrescos naturales</h4><p>Sandía, maracuyá, cebada, limonada, té de limón, naranjada. 100% naturales.</p></div>
+      <div class="card"><span class="tag">Batidos</span><h4>Smoothies</h4><p>Fruta fresca, sin azúcar añadida. Opción light, cremosa o cítrica. Desde $1.75.</p></div>
+      <div class="card"><span class="tag">Ambrosía</span><h4>Licuados</h4><p>Bebidas desintoxicantes, cocteles de frutas, cereales y snacks saludables.</p></div>
+      <div class="card"><span class="tag">Dulce</span><h4>Muffins</h4><p>Horneados frescos del día. Little Cake y My Green Apple con espinaca, yogurt y fruta.</p></div>
+    </div>
+
+    <div class="biz-grid">
+      <div class="schedule reveal">
+        <p class="eyebrow">Horarios de servicio</p>
+        <h3>Siempre a tiempo.</h3>
+        <table>
+          <tr><td>DESAYUNO</td><td>6:00 am – 8:00 am</td></tr>
+          <tr><td>ALMUERZO</td><td>10:00 am – 2:00 pm</td></tr>
+          <tr><td>SNACKS</td><td>2:00 pm – 4:00 pm</td></tr>
+          <tr><td>SÁBADOS</td><td>9:00 am – 12:00 pm</td></tr>
+          <tr><td>PAGOS</td><td>Efectivo · Tarjeta · Prepago</td></tr>
+        </table>
+        <p>Horarios adaptables a las necesidades de cada empresa o institución.</p>
+      </div>
+      <div class="biz-photo reveal"><img src="assets/img/stock/filosofia.webp" alt="Plato balanceado con huevo, aguacate, tomate y vegetales frescos" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Clientes ========== -->
+<section class="section" id="clientes">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2 class="title">Quienes confían en nosotros</h2>
+      <hr class="accent-bar">
+    </div>
+    <div class="clients reveal">
+      <div class="client"><img src="assets/img/clientes/concentrix.png" alt="Concentrix" loading="lazy"><b class="sr-only">Concentrix</b><span>2014 – presente</span></div>
+      <div class="client"><img src="assets/img/clientes/telus.png" alt="TELUS El Salvador" loading="lazy"><b class="sr-only">TELUS El Salvador</b><span>2017 – presente</span></div>
+      <div class="client"><img src="assets/img/clientes/banco-atlantida.png" alt="Banco Atlántida" loading="lazy"><b class="sr-only">Banco Atlántida</b><span>Cliente corporativo</span></div>
+      <div class="client"><img src="assets/img/clientes/tigo.png" alt="Tigo" loading="lazy"><b class="sr-only">Tigo</b><span>Cliente corporativo</span></div>
+      <div class="client"><img src="assets/img/clientes/avianca.png" alt="Avianca" loading="lazy"><b class="sr-only">Avianca</b><span>Servicio de producción</span></div>
+      <div class="client"><img src="assets/img/clientes/vijosa.png" alt="Vijosa Laboratorios" loading="lazy"><b class="sr-only">Vijosa Laboratorios</b><span>2018 – presente</span></div>
+      <div class="client"><img src="assets/img/clientes/office-gurus.png" alt="The Office Gurus" loading="lazy"><b class="sr-only">The Office Gurus</b><span>2018 – presente</span></div>
+      <div class="client"><img src="assets/img/clientes/grupo-roble.png" alt="Grupo Roble" loading="lazy"><b class="sr-only">Grupo Roble</b><span>Cliente corporativo</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Contacto ========== -->
+<section class="section contact" id="contacto">
+  <div class="wrap">
+    <div class="reveal">
+      <h2>Trabajemos juntos.</h2>
+      <p class="hand">Del campo a tu mesa</p>
+      <p>Para pedidos de KIDS o De La Mesa, o para llevar nuestro servicio de cafetería a tu empresa, escuela o institución, escríbenos y te respondemos.</p>
+      <div class="actions">
+        <a href="https://wa.me/50376825733" target="_blank" rel="noopener" class="btn btn-wa"><svg><use href="#i-wa"/></svg>Escribir por WhatsApp</a>
+        <a href="tel:+50322074648" class="btn btn-ghost"><svg class="ico"><use href="#i-tel"/></svg>Llamar</a>
+      </div>
+    </div>
+    <div class="contact-card reveal">
+      <div><svg class="ico"><use href="#i-pin"/></svg><p><b>Dirección</b><span>Colonia San Benito, Calle Circunvalación N.° 277, San Salvador</span></p></div>
+      <div><svg class="ico"><use href="#i-wa"/></svg><p><b>WhatsApp</b><a href="https://wa.me/50376825733" target="_blank" rel="noopener">7682-5733</a></p></div>
+      <div><svg class="ico"><use href="#i-tel"/></svg><p><b>Teléfono</b><a href="tel:+50322074648">2207-4648</a></p></div>
+      <div><svg class="ico"><use href="#i-clock"/></svg><p><b>Horario</b><span>Lun – Vie 6:00 am – 4:00 pm · Sáb 9:00 am – 12:00 pm</span></p></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <img class="footer-logo" src="assets/img/logo/logo-crema.png" alt="Green &amp; Red Tomatoes" width="991" height="238" loading="lazy">
+        <p class="footer-tag">Home Food. Alimentación que nutre. Servicio que fideliza.</p>
+        <p class="motto">Comida real para una vida real.</p>
+      </div>
+      <div>
+        <h5>Marcas</h5>
+        <ul><li><a href="#kids">KIDS</a></li><li><a href="#de-la-mesa">De La Mesa</a></li><li><a href="#ensaladas">Ensaladas</a></li><li><a href="#botella">Comida en botella</a></li></ul>
+      </div>
+      <div>
+        <h5>Empresa</h5>
+        <ul><li><a href="#nosotros">Nuestra filosofía</a></li><li><a href="#empresas">Cafeterías</a></li><li><a href="#clientes">Clientes</a></li><li><a href="#como-funciona">Cómo funciona</a></li></ul>
+      </div>
+      <div>
+        <h5>Contacto</h5>
+        <ul><li>Colonia San Benito</li><li>Calle Circunvalación N.° 277</li><li><a href="https://wa.me/50376825733" target="_blank" rel="noopener">7682-5733</a></li><li><a href="tel:+50322074648">2207-4648</a></li></ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© <span id="year">2026</span> Rosales &amp; Loera S.A. de C.V.</span>
+      <span>Green &amp; Red Tomatoes — Home Food.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/50376825733" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp"><svg><use href="#i-wa"/></svg></a>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
